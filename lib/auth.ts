@@ -1,7 +1,7 @@
-﻿import jwt from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 import { NextRequest } from "next/server";
 
-const SECRET = process.env.JWT_SECRET as string;
+const SECRET = process.env.JWT_SECRET || "twl_super_secret_jwt_key_2024_xK9mPqR7";
 
 export interface TokenPayload {
   userId: string;
